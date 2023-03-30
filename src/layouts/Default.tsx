@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "../components/Sidebar";
+import './Default.css'
 
 export function Default(){ 
     return(
@@ -10,7 +11,5 @@ export function Default(){
         <Outlet />         {/* Aqui definimos o método para funcionar Children da rota no "routes" */}
       </div>
     </div>
-
     )
-
 }

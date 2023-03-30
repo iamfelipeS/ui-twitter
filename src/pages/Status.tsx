@@ -1,3 +1,4 @@
+import { PaperPlaneRight } from "phosphor-react"
 import { FormEvent, KeyboardEvent, useState } from "react"
 import { Header } from "../components/Header"
 import { Separator } from "../components/Separator"
@@ -33,7 +34,7 @@ export function Status(){
         <main className='status'>
         <Header title='Tweet' />
 
-        <Tweet content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla maxime debitis sit odit harum ab quisquam, praesentium, cumque optio corporis provident. Modi dignissimos, doloribus quas voluptatum corporis vel odit asperiores!" />
+        <Tweet content="" />
        
         <Separator />
        
@@ -50,7 +51,10 @@ export function Status(){
               }}
               />
             </label>
-              <button type="submit">Answer</button>
+              <button type="submit">
+                <PaperPlaneRight />
+                <span>Answer</span> 
+              </button>
           </form>
 
           {answers.map(answers => {

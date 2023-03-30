@@ -32,6 +32,12 @@
 /* macete para dar efeito hover no botão */
 }
 
+.sidebar .new-tweet svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
 .main-navigation {
     display: flex;
     flex-direction: column;
@@ -45,4 +51,23 @@
     font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+@media(max-width: 780px){
+    .sidebar{
+        padding: 1.5rem 0.75rem;
+        align-items: center;
+    }
+
+    .main-navigation a span{
+        display: none;
+    }
+    
+    .sidebar .new-tweet span{
+        display: none;
+    }
+    
+    .sidebar .new-tweet svg{
+        display: block;
+    }
 }
